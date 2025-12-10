@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandora - Platform Web Novel Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/open-box.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-box-open"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Pandora</span>
+                    <span class="logo-tagline">Web Novel Platform</span>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Cari novel, penulis, atau genre...">
+                    <button class="search-btn">Cari</button>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Beranda</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-fire"></i>
+                        <span>Trending</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-book-open"></i>
+                        <span>Library</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>Buat</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-pen-fancy"></i>
+                            <span>Novel Baru</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Fork Cerita</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users"></i>
+                            <span>Kolaborasi</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- User Actions -->
+            <div class="user-actions">
+                <button class="btn-notification">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                <button class="btn-write">
+                    <i class="fas fa-feather-alt"></i>
+                    <span>Tulis</span>
+                </button>
+                <div class="user-profile">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="User" class="user-avatar">
+                    <span class="user-name">Penulis</span>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-star"></i> Platform #1 Indonesia</span>
+                </div>
+                <h1 class="hero-title">
+                    Buka <span class="text-gradient">Kotak Imajinasi</span> Anda
+                </h1>
+                <p class="hero-description">
+                    Tulis, baca, dan berkolaborasi dalam dunia cerita tanpa batas. 
+                    Platform web novel interaktif pertama dengan sistem fork dan voting plot.
+                </p>
+                <div class="hero-cta">
+                    <a href="#" class="btn btn-primary btn-large">
+                        <i class="fas fa-pen-fancy"></i>
+                        Mulai Menulis
+                    </a>
+                    <a href="#" class="btn btn-secondary btn-large">
+                        <i class="fas fa-compass"></i>
+                        Jelajahi Cerita
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50.000+</span>
+                        <span class="stat-label">Penulis</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">200.000+</span>
+                        <span class="stat-label">Cerita</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5 Juta+</span>
+                        <span class="stat-label">Pembaca</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Novel Cover">
+                    <div class="card-badge trending">
+                        <i class="fas fa-fire"></i> Trending
+                    </div>
+                </div>
+                <div class="floating-card card-2">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Author">
+                    <div class="card-badge new">
+                        <i class="fas fa-newspaper"></i> Baru
+                    </div>
+                </div>
+                <div class="floating-card card-3">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Reading">
+                    <div class="card-badge popular">
+                        <i class="fas fa-heart"></i> Populer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Kenapa Pilih <span class="text-gradient">Pandora</span>?</h2>
+                <p class="section-subtitle">Platform dengan fitur unik untuk pengalaman menulis dan membaca yang tak terlupakan</p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon icon-1">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3 class="feature-title">Fork Cerita</h3>
+                    <p class="feature-description">
+                        Buat alternatif cerita dari novel favorit Anda. Multiple endings, alternate universes, dan plot twists!
+                    </p>
+                    <a href="#" class="feature-link">
+                        Pelajari lebih lanjut <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon icon-2">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">Kolaborasi Real-time</h3>
+                    <p class="feature-description">
+                        Tulis bersama penulis lain dalam satu cerita. Sistem co-author dengan editor simultan.
+                    </p>
+                    <a href="#" class="feature-link">
+                        Lihat contoh <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon icon-3">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Voting Plot</h3>
+                    <p class="feature-description">
+                        Pembaca bisa voting untuk menentukan arah cerita. Demokratisasi storytelling!
+                    </p>
+                    <a href="#" class="feature-link">
+                        Coba voting <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon icon-4">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h3 class="feature-title">Komentar Paragraf</h3>
+                    <p class="feature-description">
+                        Diskusikan setiap paragraf dengan penulis dan pembaca lain. Interaksi yang mendalam.
+                    </p>
+                    <a href="#" class="feature-link">
+                        Baca diskusi <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Novels -->
+    <section class="trending-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-fire"></i> Trending Minggu Ini</h2>
+                <a href="#" class="view-all">
+                    Lihat Semua <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="trending-grid">
+                <!-- Novel 1 -->
+                <div class="novel-card featured">
+                    <div class="novel-rank">#1</div>
+                    <div class="novel-cover">
+                        <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Novel Cover">
+                        <div class="novel-overlay">
+                            <button class="btn-read">
+                                <i class="fas fa-play"></i> Lanjut Baca
+                            </button>
+                        </div>
+                    </div>
+                    <div class="novel-info">
+                        <h3 class="novel-title">Dimensi Terlarang</h3>
+                        <p class="novel-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="Author">
+                            <span>Aldi Pratama</span>
+                        </p>
+                        <p class="novel-description">
+                            Portal misterius muncul di Jakarta, membawa kekuatan yang mengubah realitas...
+                        </p>
+                        <div class="novel-genres">
+                            <span class="genre-tag fantasy">Fantasi</span>
+                            <span class="genre-tag adventure">Petualangan</span>
+                            <span class="genre-tag romance">Romance</span>
+                        </div>
+                        <div class="novel-stats">
+                            <span class="stat">
+                                <i class="fas fa-eye"></i> 245K
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-heart"></i> 12K
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-comment"></i> 3.4K
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Novel 2 -->
+                <div class="novel-card">
+                    <div class="novel-rank">#2</div>
+                    <div class="novel-cover">
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Novel Cover">
+                    </div>
+                    <div class="novel-info">
+                        <h3 class="novel-title">Cinta di Kampus Merah</h3>
+                        <p class="novel-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b786d4d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="Author">
+                            <span>Sari Dewi</span>
+                        </p>
+                        <div class="novel-genres">
+                            <span class="genre-tag romance">Romance</span>
+                            <span class="genre-tag drama">Drama</span>
+                        </div>
+                        <div class="novel-stats">
+                            <span class="stat">
+                                <i class="fas fa-eye"></i> 189K
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-heart"></i> 8.7K
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Novel 3 -->
+                <div class="novel-card">
+                    <div class="novel-rank">#3</div>
+                    <div class="novel-cover">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Novel Cover">
+                    </div>
+                    <div class="novel-info">
+                        <h3 class="novel-title">Detektif Hantu</h3>
+                        <p class="novel-author">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="Author">
+                            <span>Budi Santoso</span>
+                        </p>
+                        <div class="novel-genres">
+                            <span class="genre-tag mystery">Misteri</span>
+                            <span class="genre-tag horror">Horor</span>
+                        </div>
+                        <div class="novel-stats">
+                            <span class="stat">
+                                <i class="fas fa-eye"></i> 167K
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-heart"></i> 7.2K
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Write Section -->
+    <section class="write-section">
+        <div class="section-container">
+            <div class="write-header">
+                <h2 class="section-title">
+                    <i class="fas fa-bolt"></i> Punya Ide? <span class="text-gradient">Tulis Sekarang!</span>
+                </h2>
+                <p class="section-subtitle">Editor cepat untuk menangkap inspirasi yang datang tiba-tiba</p>
+            </div>
+
+            <div class="write-container">
+                <div class="write-editor">
+                    <div class="editor-toolbar">
+                        <div class="tool-group">
+                            <button class="tool-btn"><i class="fas fa-bold"></i></button>
+                            <button class="tool-btn"><i class="fas fa-italic"></i></button>
+                            <button class="tool-btn"><i class="fas fa-underline"></i></button>
+                        </div>
+                        <div class="tool-group">
+                            <button class="tool-btn"><i class="fas fa-heading"></i></button>
+                            <button class="tool-btn"><i class="fas fa-list-ul"></i></button>
+                            <button class="tool-btn"><i class="fas fa-list-ol"></i></button>
+                        </div>
+                        <div class="tool-group">
+                            <button class="tool-btn"><i class="fas fa-image"></i></button>
+                            <button class="tool-btn"><i class="fas fa-link"></i></button>
+                            <button class="tool-btn"><i class="fas fa-smile"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="editor-content">
+                        <textarea class="editor-textarea" placeholder="Mulai menulis cerita Anda di sini... (Minimal 100 kata untuk publish)"></textarea>
+                        <div class="editor-preview">
+                            <h4>Pratinjau:</h4>
+                            <div class="preview-content"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="editor-footer">
+                        <div class="editor-meta">
+                            <div class="word-count">
+                                <i class="fas fa-file-word"></i>
+                                <span>Kata: <strong>0</strong>/100</span>
+                            </div>
+                            <div class="genre-select">
+                                <select>
+                                    <option>Pilih Genre</option>
+                                    <option>Fantasi</option>
+                                    <option>Romance</option>
+                                    <option>Misteri</option>
+                                    <option>Sci-Fi</option>
+                                    <option>Horror</option>
+                                    <option>Drama</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="editor-actions">
+                            <button class="btn btn-outline">
+                                <i class="fas fa-save"></i> Draft
+                            </button>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Terbitkan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="write-tips">
+                    <h3><i class="fas fa-lightbulb"></i> Tips Menulis</h3>
+                    <ul class="tips-list">
+                        <li>Mulai dengan hook yang menarik</li>
+                        <li>Gunakan dialog untuk hidupkan karakter</li>
+                        <li>Show, don't tell</li>
+                        <li>Konsisten dengan POV</li>
+                        <li>Edit setelah selesai menulis</li>
+                    </ul>
+                    <div class="writing-stats">
+                        <h4>Statistik Anda</h4>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                              <span class="stat-value">15</span>
+                              <span class="stat-label">Cerita</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">2.5K</span>
+                                <span class="stat-label">Pembaca</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">87</span>
+                                <span class="stat-label">Komentar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fork System Demo -->
+    <section class="fork-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-code-branch"></i> Sistem <span class="text-gradient">Fork</span> Cerita
+                </h2>
+                <p class="section-subtitle">Buat alternatif cerita dari novel favorit Anda</p>
+            </div>
+
+            <div class="fork-demo">
+                <div class="original-story">
+                    <div class="story-header">
+                        <h3>Cerita Original</h3>
+                        <span class="story-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="Author">
+                            Rendra Wijaya
+                        </span>
+                    </div>
+                    <div class="story-content">
+                        <p class="story-text">
+                            "Rendra berdiri di tepi tebing, matahari terbenam menyapu langit dengan warna jingga dan ungu. 
+                            Di tangannya, surat dari kekasihnya berisi sebuah pilihan: melompat ke dalam ketidakpastian, 
+                            atau kembali menghadapi realitas yang menyakitkan. Jantungnya berdebar kencang..."
+                        </p>
+                    </div>
+                    <div class="fork-choices">
+                        <h4>Pilihan Pembaca:</h4>
+                        <div class="choices-grid">
+                            <button class="choice-btn" data-choice="jump">
+                                <i class="fas fa-running"></i>
+                                <span>Lompat!</span>
+                                <small>45% memilih ini</small>
+                            </button>
+                            <button class="choice-btn" data-choice="return">
+                                <i class="fas fa-undo"></i>
+                                <span>Kembali</span>
+                                <small>55% memilih ini</small>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fork-result">
+                    <div class="fork-header">
+                        <h3>Alternatif Cerita (Forks)</h3>
+                        <button class="btn-fork">
+                            <i class="fas fa-plus"></i> Buat Fork
+                        </button>
+                    </div>
+                    <div class="fork-stories">
+                        <div class="fork-story">
+                            <div class="fork-title">
+                                <h4>The Hero's Leap</h4>
+                                <span class="fork-author">oleh @sarah_penulis</span>
+                            </div>
+                            <p class="fork-preview">
+                                Rendra melompat dan menemukan dirinya di dunia paralel dimana dia adalah seorang pahlawan legendaris...
+                            </p>
+                            <div class="fork-stats">
+                                <span><i class="fas fa-heart"></i> 1.2K</span>
+                                <span><i class="fas fa-eye"></i> 15K</span>
+                            </div>
+                        </div>
+                        
+                        <div class="fork-story">
+                            <div class="fork-title">
+                                <h4>Return to Reality</h4>
+                                <span class="fork-author">oleh @bayu_creative</span>
+                            </div>
+                            <p class="fork-preview">
+                                Rendra memilih kembali dan menemukan bahwa kekasihnya sedang dalam bahaya. Dia harus menyelamatkannya...
+                            </p>
+                            <div class="fork-stats">
+                                <span><i class="fas fa-heart"></i> 890</span>
+                                <span><i class="fas fa-eye"></i> 12K</span>
+                            </div>
+                        </div>
+                        
